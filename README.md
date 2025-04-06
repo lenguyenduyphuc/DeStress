@@ -22,16 +22,6 @@
 - **Dark Mode**: Easy on the eyes, perfect for late-night sessions
 - **Responsive Design**: Works beautifully on desktop, tablet, and mobile devices
 
-## 🖼️ Screenshots
-
-<div align="center">
-  <img src="public/screenshots/dashboard.png" alt="Dashboard" width="80%" />
-  <p><em>Main dashboard with chat history</em></p>
-  
-  <img src="public/screenshots/chat.png" alt="Chat Interface" width="80%" />
-  <p><em>Chat interface with AI responses</em></p>
-</div>
-
 ## 🚀 Getting Started
 
 ### Prerequisites
@@ -46,6 +36,29 @@
    npm install destress-ai
    # or
    yarn add destress-ai
+   ```
+
+2. **Open Model**:
+
+   ```
+   cd model
+   python model.py
+   ```
+
+3. **Start backend**:
+
+   ```
+   cd backend
+   npm install
+   npm run dev
+   ```
+
+4. **Start frontend**:
+
+   ```
+   cd client
+   npm install
+   npm run dev
    ```
 
 ## Use Cases
