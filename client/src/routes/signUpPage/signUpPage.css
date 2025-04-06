@@ -1,0 +1,57 @@
+.signUpPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background: linear-gradient(135deg, var(--background) 0%, var(--background-light) 100%);
+  padding: 20px;
+}
+
+/* Custom styles for Clerk's sign-up component */
+:global(.cl-card) {
+  border-radius: var(--radius-lg) !important;
+  box-shadow: 0 10px 30px var(--shadow) !important;
+  border: 1px solid var(--border) !important;
+  background-color: var(--background-light) !important;
+}
+
+:global(.cl-button-primary) {
+  background-color: var(--primary) !important;
+}
+
+:global(.cl-button-primary:hover) {
+  background-color: var(--primary-hover) !important;
+}
+
+:global(.cl-socialButtonsIconButton) {
+  border-radius: var(--radius-md) !important;
+  background-color: var(--background-lighter) !important;
+  border: 1px solid var(--border) !important;
+}
+
+:global(.cl-headerTitle) {
+  color: var(--foreground) !important;
+}
+
+:global(.cl-headerSubtitle) {
+  color: var(--foreground-muted) !important;
+}
+
+:global(.cl-formFieldLabel) {
+  color: var(--foreground) !important;
+}
+
+:global(.cl-formFieldInput) {
+  border-radius: var(--radius-md) !important;
+  background-color: var(--background) !important;
+  border: 1px solid var(--border) !important;
+  color: var(--foreground) !important;
+}
+
+:global(.cl-footerActionLink) {
+  color: var(--primary) !important;
+}
+
+:global(.cl-footerActionText) {
+  color: var(--foreground-muted) !important;
+}

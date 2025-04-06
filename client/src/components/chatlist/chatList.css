@@ -1,0 +1,110 @@
+.chatList {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 16px;
+  overflow-y: auto;
+  background-color: #121212;
+  color: white;
+}
+
+.chatList hr {
+  border: none;
+  height: 1px;
+  background-color: #333;
+  margin: 16px 0;
+}
+
+.chatList .title {
+  font-weight: 600;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+  color: #888;
+}
+
+.chatList .list {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  gap: 4px;
+  max-height: calc(100vh - 250px);
+}
+
+.chatList a {
+  padding: 10px 12px;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  word-break: break-word;
+  line-height: 1.3;
+  color: white;
+  text-decoration: none;
+  position: relative;
+}
+
+.chatList a:hover {
+  background-color: #2a2a2a;
+}
+
+.chatList a.active {
+  background-color: #7c3aed;
+  color: white;
+}
+
+.chatList a svg {
+  width: 18px;
+  height: 18px;
+  opacity: 0.8;
+  flex-shrink: 0;
+}
+
+.chatList .empty-list {
+  color: #888;
+  font-size: 14px;
+  padding: 10px;
+  text-align: center;
+}
+
+.chatList .loading,
+.chatList .error {
+  color: #888;
+  font-size: 14px;
+  padding: 10px;
+  text-align: center;
+}
+
+.chatList .error {
+  color: #ff4d4f;
+}
+
+.delete-chat {
+  background: none;
+  border: none;
+  color: #888;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: auto;
+  transition: color 0.2s ease;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: none;
+}
+
+.chatList a:hover .delete-chat {
+  display: block;
+}
+
+.delete-chat:hover {
+  color: white;
+}
+
+.chat-item {
+  position: relative;
+}

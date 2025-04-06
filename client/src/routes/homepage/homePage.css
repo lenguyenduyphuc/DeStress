@@ -1,0 +1,144 @@
+.homepage {
+  display: flex;
+  height: 100%;
+  background: linear-gradient(135deg, var(--background) 0%, var(--background-light) 100%);
+  overflow: hidden;
+}
+
+.left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 10%;
+  max-width: 700px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.left h1 {
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 16px;
+  color: var(--primary);
+  line-height: 1.2;
+}
+
+.left h2 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: var(--foreground);
+  line-height: 1.4;
+}
+
+.left h3 {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 40px;
+  color: var(--foreground-muted);
+  line-height: 1.6;
+}
+
+.left a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary);
+  color: var(--primary-foreground);
+  text-decoration: none;
+  padding: 16px 32px;
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  font-size: 16px;
+  transition: var(--transition);
+  box-shadow: 0 4px 20px rgba(139, 92, 246, 0.3);
+  width: fit-content;
+}
+
+.left a:hover {
+  background-color: var(--primary-hover);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 25px rgba(139, 92, 246, 0.4);
+}
+
+.right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+.illustration {
+  max-width: 100%;
+  max-height: 80vh;
+  animation: float 6s ease-in-out infinite;
+  filter: drop-shadow(0 10px 15px var(--shadow));
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@media (max-width: 1024px) {
+  .homepage {
+    flex-direction: column;
+  }
+
+  .left {
+    padding: 60px 40px;
+    max-width: 100%;
+  }
+
+  .left h1 {
+    font-size: 36px;
+  }
+
+  .left h2 {
+    font-size: 24px;
+  }
+
+  .right {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .left {
+    padding: 40px 20px;
+  }
+
+  .left h1 {
+    font-size: 32px;
+  }
+
+  .left h2 {
+    font-size: 20px;
+  }
+
+  .left h3 {
+    font-size: 16px;
+  }
+}
