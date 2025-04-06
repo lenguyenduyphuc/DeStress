@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="public/logo.png" alt="AI Chat Logo" width="200" height="200" />
+  <img src="client/public/logo.png" alt="AI Chat Logo" width="200" height="200" />
   <h1>AI Chat Assistant</h1>
   <p>A powerful, intuitive AI chat application built with React and modern web technologies</p>
   
